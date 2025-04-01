@@ -1,23 +1,26 @@
-import { useContext, useEffect } from "react";
-import { HomeContext } from "../../pages/Home";
-import Message from "../Message/Message";
-import "./messages.sass";
+import { useContext, useEffect, useRef } from 'react';
+import { HomeContext } from '../../pages/Home';
+import Message from '../Message/Message';
+import './messages.sass';
 
 const Messages = () => {
-  const { messages } = useContext(HomeContext);
+    const { messages } = useContext(HomeContext);
+    const scrollableDiv = useRef(null);
 
-  useEffect(() => {
-    const scrollableDiv = document.getElementById('messages');
-    scrollableDiv.scrollTop = scrollableDiv.scrollHeight;
-  }, [messages]);
+    useEffect(() => {
+        const container = scrollableDiv.current;
+        if (container) {
+            container.scrollTop = container.scrollHeight;
+        }
+    }, [messages]);
 
-  return (
-    <div id="messages" className="messages">
-      {messages.map((message) => (
-        <Message message={message} key={message.id}></Message>
-      ))}
-    </div>
-  );
+    return (
+        <div id="messages" className="messages" ref={scrollableDiv}>
+            {messages.map((message) => (
+                <Message message={message} key={message.id}></Message>
+            ))}
+        </div>
+    );
 };
 
 export default Messages;
