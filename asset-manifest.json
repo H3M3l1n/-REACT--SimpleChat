@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/-REACT--SimpleChat/static/css/main.af824195.css",
-    "main.js": "/-REACT--SimpleChat/static/js/main.50c5c0fb.js",
+    "main.css": "/-REACT--SimpleChat/static/css/main.18790b31.css",
+    "main.js": "/-REACT--SimpleChat/static/js/main.cb06e68e.js",
     "index.html": "/-REACT--SimpleChat/index.html",
-    "main.af824195.css.map": "/-REACT--SimpleChat/static/css/main.af824195.css.map",
-    "main.50c5c0fb.js.map": "/-REACT--SimpleChat/static/js/main.50c5c0fb.js.map"
+    "main.18790b31.css.map": "/-REACT--SimpleChat/static/css/main.18790b31.css.map",
+    "main.cb06e68e.js.map": "/-REACT--SimpleChat/static/js/main.cb06e68e.js.map"
   },
   "entrypoints": [
-    "static/css/main.af824195.css",
-    "static/js/main.50c5c0fb.js"
+    "static/css/main.18790b31.css",
+    "static/js/main.cb06e68e.js"
   ]
 }
