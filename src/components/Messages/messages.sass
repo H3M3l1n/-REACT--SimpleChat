@@ -8,14 +8,14 @@
     word-wrap: break-word
     line-height: 1.75
     overflow-y: auto
-    // &::-webkit-scrollbar // somehow bugged
-    //     display: none
-        // width: 10px
-        // &-track
-        //     background: transparent
-        // &-thumb
-        //     background-color: transparent
-        //     border: 1px solid $font-color-main
-        //     border-radius: 5px
-        //     &:hover
-        //         background-color: $font-color-main
+    will-change: scroll-position
+    &::-webkit-scrollbar // somehow bugged
+        width: 10px
+        &-track
+            background: transparent
+        &-thumb
+            background-color: transparent
+            border: 1px solid $font-color-main
+            border-radius: 5px
+            &:hover
+                background-color: $font-color-main
